@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import SectionHeader from './SectionHeader'
 import { Reveal } from './Reveal'
 import SkillTag from './SkillTag'
-import { supabase } from '@/lib/supabase/client'
+import { supabase } from './../../lib/supabase/client'
 import { PreviewProject, Project } from '@/lib/types'
 import ProjectCard from './ProjectCard'
 
