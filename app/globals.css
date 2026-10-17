@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --paper: #F7F5F0;
+  --ink: #1d1d1d;
+  --sand: #E8E6DF;
+  --accent: #FF4D00;
+  --hard: #1A1A1A;
+}
+
+.dark {
+  --paper: #141412;
+  --ink: #F2EFE8;
+  --sand: #24231F;
+  --hard: #4A4843;
+}
+
+
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-sand: var(--sand);
+  --color-accent: var(--accent);
+  --font-display: var(--font-anton), Impact, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  --radius-base: 4px;
+  --shadow-card: 10px 10px 0 0 var(--hard);
+  --shadow-btn: 6px 6px 0 0 var(--hard);
+  --shadow-btn-sm: 4px 4px 0 0 var(--hard);
+}
